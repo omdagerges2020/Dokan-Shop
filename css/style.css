@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color: #cd5c5c;
+    --second-color: #343a40;
+}
+
+/* Global */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.heading {
+    width: 100%;
+    text-align: center;
+}
+.card {
+    border: none !important;
+}
+.card-body {
+    flex: none !important;
+}
+
+
+
+
+
+
+
+/* Nav Section */
+/* Navbar */
+.navbar-nav .active {
+    color: var(--main-color) !important;
+}
+.nav-content .navbar {
+    background-color: var(--second-color);
+}
+.dropdown-menu.show {
+    left: -20px !important;
+    background-color: var(--second-color);
+}
+.border-danger {
+    border-color: var(--main-color);
+}
+
+/* Carousel */
+.carousel-indicators {
+    bottom: 7em;
+    z-index: 3;
+    height: 10%;
+}
+.carousel-indicators button:focus {
+    background-color: var(--main-color) !important;
+    opacity: 1;
+}
+.carousel-indicators button.active {
+    background-color: var(--main-color);
+}
+.carousel-caption {
+    z-index: 2;
+    margin-bottom: 10em !important;
+}
+.carousel-control-prev img,
+.carousel-control-next img {
+    width: 30px;
+}
+/* Overlay */
+.carousel::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.582);
+}
+.navbar {
+    z-index: 15;
+}
+
+
+/* Categories Section */
+.heading p {
+    color: #777;
+}
+.main-categories {
+    margin-top: 4em;
+}
+.image img {
+    width: 100%;
+}
+.icons i,
+.body p
+ {
+    color: #908d8d;
+}
+.icons i:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+.body button {
+    border: none;
+    background-color: var(--main-color);
+    padding: 3px 5px;
+    color: white;
+    border-radius: 4px;
+    transition: .5s;
+}
+.body button:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Video section */
+.heading h1 {
+    font-size: 3.5em;
+    font-weight: 600;
+}
+.main-video {
+    margin-top: 6em;
+}
+
+
+/* Deals Section */
+.cards-deal {
+    gap: 25px 5px;
+}
+.cards-deal .discount {
+    position: relative;
+}
+
+.cards-deal .discount::after {
+    content: "Enjoy 50% Discount On Black Friday";
+    position: absolute;
+    width: 70%;
+    height: 75%;
+    transform: translate(-50%, -50%); 
+    background-color: #cd5c5c;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    text-align: start;
+    padding-left: 1em;
+    padding-top: .5em;
+    padding-bottom: 1em;
+    display: none;
+    transition: .7 all linear;
+}  
+.cards-deal .discount:hover:after {
+    display: block;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+} 
+
+
+
+/* Feedback Section */
+.text-area {
+    margin-top: 1em;
+}
+textarea {
+    padding-bottom: 10em !important;
+}
+.button {
+    margin-top: .5em;
+}
+.main-feadback .button button {
+    background-color: var(--main-color) !important;
+    border: none;
+}
+.address-details h3 {
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+/* Responsive */
+/* Mobile */
+@media screen and (max-width: 767px) {
+    /* Carousel */
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-caption {
+        margin-bottom: 0 !important;
+    }
+    .row {
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Categories */
+    .card {
+        margin-bottom: 4em;
+    }
+    /* Deal Cards */
+    .cards-deal img {
+        width: 100% !important;
+    }
+    .cards-deal {
+        width: 100% !important;
+    }
+    .main-feadback .row {
+        width: 100%;
+    }
+    .main-feadback .button button {
+        width: 100%;
+    }
+    .address,
+    .email,
+    .mobil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .address-details p {
+        width: 55%;
+        text-align: center;
+    }
+    .address-details {
+        margin-left: 0 !important;
+    }
+    
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .card {
+        margin-bottom: 2em;
+    }
+    .cards-deal .discount::after {
+        padding: 0;
+        font-size: 22px;
+    }
+
+    
+}

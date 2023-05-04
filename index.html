@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokan Shop</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrab -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+      <div class="main-nav w-100">
+        <div class="nav-content position-relative h-100 w-100 overflow-hidden">
+          <!-- Nav Bar  -->
+          <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid justify-content-between">
+                <!-- Logo -->
+                <div class="logo ms-5 d-flex">
+                    <i class="fa-solid fa-user-secret fs-1 text-white"></i>
+                    <span class="text-white fw-bold fs-2 ms-2">Dokan Shop</span>
+                </div>
+                <!-- Links -->
+                <div class="links">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">latest products</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">top deals</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">log in</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              pages
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item text-white" href="#">About Us</a></li>
+                              <li><a class="dropdown-item text-white" href="#">Men's</a></li>
+                              <li><a class="dropdown-item text-white" href="#">Women's</a></li>
+                              <li><a class="dropdown-item text-white" href="#">Kid's</a></li>
+                              <li><a class="dropdown-item text-white" href="#">Accessories</a></li>
+                              <hr class="border border-danger border-1 opacity-50">
+                              <li><a class="dropdown-item text-white" href="#">Contact Us</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                  </div>
+                </div>
+              </div>
+          </nav>
+          
+          <!-- Carousel -->
+          <div id="carouselExampleCaptions" class="carousel slide w-100 position-relative">
+            <button class="carousel-control-prev position-absolute" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <img src="images/prev.png" alt="previous">
+            </button>
+            <button class="carousel-control-next position-absolute" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <img src="images/next.png" alt="next">
+            </button>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/women-001.jpg" class="d-block w-100" alt="women-img">
+                <div class="carousel-caption d-md-block">
+                  <h5>First slide label</h5>
+                  <p class="fs-5">Some representative placeholder content for the first slide.</p class="fs-5">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/men-001.jpg" class="d-block w-100" alt="men-img">
+                <div class="carousel-caption d-md-block">
+                  <h5>Second slide label</h5>
+                  <p class="fs-5">Some representative placeholder content for the second slide.</p class="fs-5">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/kid-001.jpg" class="d-block w-100" alt="kids-img">
+                <div class="carousel-caption d-md-block">
+                  <h5>Third slide label</h5>
+                  <p class="fs-5">Some representative placeholder content for the third slide.</p class="fs-5">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/accessories-001.jpg" class="d-block w-100" alt="accessories-img">
+                <div class="carousel-caption d-md-block">
+                  <h5>Third slide label</h5>
+                  <p class="fs-5">Some representative placeholder content for the third slide.</p class="fs-5">
+                </div>
+              </div>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- categories Section -->
+      <div class="main-categories w-100">
+        <div class="container">
+          <!-- Heading -->
+          <div class="heading">
+            <h2>Latest Products</h2>
+            <p class="mt-3 fs-4">Here, You Can Find Our Newest Products</p>
+          </div>
+          <!-- Cards -->
+          <div class="row mt-5">
+              <!-- Card-1 -->
+              <div class="col-lg-3 col-md-6 col-sm-12 card">
+                <div class="image">
+                  <img src="images/women-01.jpg" alt="">
+                </div>
+                <div class="body d-flex justify-content-center align-items-center flex-column">
+                  <div class="icons d-flex justify-content-evenly w-100 mt-1">
+                    <i class="fa-solid fa-heart pe-4 fs-5"></i>
+                    <i class="fa-solid fa-cart-plus ps-4 fs-5"></i>
+                  </div>
+                  <h5 class="mt-3">New Green Jacket</h5>
+                  <p>EGP 290.0</p>
+                  <a href="#"><button>See More</button></a>
+                </div>
+              </div>
+              <!-- Card-2 -->
+              <div class="col-lg-3 col-md-6 col-sm-12  card">
+                <div class="image">
+                  <img src="images/men-01.jpg" alt="">
+                </div>
+                <div class="body d-flex justify-content-center align-items-center flex-column">
+                  <div class="icons d-flex justify-content-evenly w-100 mt-1">
+                    <i class="fa-solid fa-heart pe-4 fs-5"></i>
+                    <i class="fa-solid fa-cart-plus ps-4 fs-5"></i>
+                  </div>
+                  <h5 class="mt-3">New Green Jacket</h5>
+                  <p>EGP 150.0</p>
+                  <a href="#"><button>See More</button></a>
+                </div>
+              </div>
+              <!-- Card-3 -->
+              <div class="col-lg-3 col-md-6 col-sm-12 card">
+                <div class="image">
+                  <img src="images/kid-01.jpg" alt="">
+                </div>
+                <div class="body d-flex justify-content-center align-items-center flex-column">
+                  <div class="icons d-flex justify-content-evenly w-100 mt-1">
+                    <i class="fa-solid fa-heart pe-4 fs-5"></i>
+                    <i class="fa-solid fa-cart-plus ps-4 fs-5"></i>
+                  </div>
+                  <h5 class="mt-3">New Green Jacket</h5>
+                  <p>EGP 295.0</p>
+                  <a href="#"><button>See More</button></a>
+                </div>
+              </div>
+              <!-- Card-4 -->
+              <div class="col-lg-3 col-md-6 col-sm-12 card">
+                <div class="image">
+                  <img src="images/accessories-01.jpg" alt="">
+                </div>
+                <div class="body d-flex justify-content-center align-items-center flex-column">
+                  <div class="icons d-flex justify-content-evenly w-100 mt-1">
+                    <i class="fa-solid fa-heart pe-4 fs-5"></i>
+                    <i class="fa-solid fa-cart-plus ps-4 fs-5"></i>
+                  </div>
+                  <h5 class="mt-3">New Green Jacket</h5>
+                  <p>EGP 85.0</p>
+                  <a href="#"><button>See More</button></a>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      <!-- Video Section -->
+      <div class="main-video w-100">
+        <div class="container">
+          <!-- Heading -->
+          <div class="heading ">
+            <h1>Dokan Shop Store</h1>
+            <p class="mt-2 fs-4">This Is Our Store In Real, Don't Miss To Visit Us</p>
+          </div>
+          <!-- Video -->
+          <div class="video w-100 mt-5">
+            <video class="w-100" src="videos/WhatsApp Video 2023-04-16 at 4.01.34 PM.mp4" controls muted></video>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Hot Deals Section -->
+      <div class="main-deals w-100 mt-5">
+        <div class="container">
+          <!-- Heading -->
+          <div class="heading ">
+            <h2>Hot Deals</h2>
+            <p class="mt-2 fs-5">Searching For Special Things! You Can Find Our Latest Deals Here</p>
+          </div>
+          <!-- Deals Cards -->
+          <div class="row cards-deal justify-content-center mt-5">
+            <div class="col-lg-5 col-md-5 col-sm-12 discount">
+              <img src="images/deal-02.jpg" alt="First-Deal" style="width: 90%;">
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 discount">
+              <img src="images/deal-03.jpg" alt="Second-Deal" style="width: 90%;">
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 discount">
+              <img src="images/deal-07.jpg" alt="Third-Deal" style="width: 90%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Feedback Section -->
+      <div class="main-feadback w-100 vh-100 mt-5">
+        <div class="container">
+           <!-- Heading -->
+           <div class="heading ">
+            <h2>Feedback</h2>
+            <p class="mt-2 fs-5">We Will Be Very Happy , If You Submit You Feedback For Ant Other Special Request</p>
+          </div>
+          <!-- Body -->
+          <div class="row mt-5">
+            <!-- Inputs -->
+            <div class="inputs-part d-flex flex-column justify-content-evenly col-lg-7 col-md-5 col-sm-12">
+              <div class="names-inputs d-flex flex-column">
+                <input type="text" placeholder="Your Name" class="p-2" />
+                <input type="text" placeholder="Your Mail" class="mt-3 p-2" />
+              </div>
+              <div class="text-area">
+                <textarea class="form-control d-inline" placeholder="Your Feedback" aria-label="With textarea"></textarea>
+              </div>
+              <div class="button text-end">
+                <a href="#"><button type="button" class="btn btn-primary">Submit</button></a>
+              </div>
+            </div>
+            <!-- Address -->
+            <div class="address-details col-lg-4 col-md-5 col-sm-12 d-flex flex-column justify-content-center ms-5">
+              <div class="address mb-5">
+                <h3>Address :</h3>
+                <p class="w-50">16.B ElMariotia, Faisal Giza, Egypt</p>
+              </div>
+              <div class="email mb-5">
+                <h3>E-Mail :</h3>
+                <p class="w-50">Dokanshop@Company.com</p>
+              </div>
+              <div class="mobil">
+                <h3>Mobile Number :</h3>
+                <p class="w-50">+20-11-195-544-63</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
